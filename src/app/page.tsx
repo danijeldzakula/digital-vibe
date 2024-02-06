@@ -1,6 +1,3 @@
-import Button from "@/components/button/Button";
-import Counter from "@/components/counter/Counter";
-import Notes from "@/components/notes/Notes";
 import { Container } from "@/content/Content";
 
 export const metadata = {
@@ -12,15 +9,10 @@ export default async function Home() {
 
 
   return (
-    <>
-      <div className="container mx-auto px-4">
-        <Button />
-      </div>
-
-      {/* <Container>
-        <Counter />
-        <Notes />
-      </Container> */}
-    </>
+    <main>
+      <Container>
+        <h1>Home Page</h1>
+      </Container>
+    </main>
   )
 }
