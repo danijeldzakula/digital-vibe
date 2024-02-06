@@ -1,15 +1,18 @@
 import type { Metadata } from 'next';
 import { StoreProvider } from '@/utils/redux/StoreProvider';
 import { Main } from '@/content/Content';
-import Header from '@/components/header/Header';
-import Footer from '@/components/footer/Footer';
 import { Inter } from 'next/font/google';
 import '@/styles/globals.css';
+import Header from '@/components/header';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  manifest: '/manifest.json'
+  manifest: '/manifest.json',
+  title: {
+    default: 'My Portfolio',
+    template: '%s | My Portfolio'
+  }
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -18,8 +21,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className={inter.className}>
         <StoreProvider>
           <Header />
-          <Main>{children}</Main>
-          <Footer />
+          <Main className='mt-8'>{children}</Main>
         </StoreProvider>
       </body>
     </html>

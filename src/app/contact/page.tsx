@@ -1,14 +1,14 @@
-import Section from "./(components)/section";
+import { Container } from "@/content/Content";
 
 export const metadata = {
-    title: "Contact",
-    description: "Contact",
+  title: "Get in Touch",
+  description: "Ready to take the next step? Don't hesitate to reach out! Whether you have a project in mind, want to discuss collaboration opportunities, or simply want to say hello, I'm here to listen. Fill out the form below or connect with me through the provided contact details. Let's start a conversation and turn your ideas into reality. I look forward to hearing from you!"
 };
 
 export default async function Contact() {
-    return (
-        <div className="container mx-auto px-4">
-            <Section />
-        </div>
-    )
+  return (
+    <Container>
+      <h1>Contact Page Push</h1>
+    </Container>
+  )
 }
