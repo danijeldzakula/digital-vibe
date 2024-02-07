@@ -2,7 +2,7 @@ import { Container } from "@/content/Content";
 
 export const metadata = {
   title: "Faq",
-  description: "Faq description is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+  description: "Faq description is simply dummy text of the printing and typesetting industry.",
 };
 
 export default async function Faq() {
