@@ -5,14 +5,6 @@ interface ContentProps {
     children?: React.ReactNode
 };
 
-export function Header({ className, children }: ContentProps) {
-    return <header className={cn(className)}>{children}</header>;
-}
-
-export function Nav({ className, children }: ContentProps) {
-    return <nav className={cn(className)}>{children}</nav>;
-}
-
 export function Main({ className, children }: ContentProps) {
     return <main className={cn(className)}>{children}</main>;
 }
@@ -48,8 +40,3 @@ export function Row({ className, children }: ContentProps) {
 export function Container({ className, children }: ContentProps) {
     return <div className={cn('container mx-auto px-4', className)}>{children}</div>;
 }
-
-export function Div({ className, children }: ContentProps) {
-    return <div className={cn(className)}>{children}</div>;
-}
-
