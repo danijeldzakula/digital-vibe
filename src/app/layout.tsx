@@ -12,7 +12,8 @@ export const metadata: Metadata = {
   title: {
     default: 'Digital',
     template: '%s | Digital'
-  }
+  },
+  metadataBase: new URL("https://digital-vibe.vercel.app"),
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
